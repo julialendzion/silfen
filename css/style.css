@@ -2,7 +2,7 @@
 
 :root {
   --color-1:#7BAFD4;
-  --color-2: #969ead;
+  --color-2: #EEEE9F;
   --color-3: white;
   --font-1: "Manrope", sans-serif;
 }
@@ -124,7 +124,7 @@ section {
   padding: 0;
 }
 
-#img3:hover{background-color: var(--color-1); opacity: 100%; cursor: pointer;}
+#img3:hover{background-color: var(--color-2); opacity: 100%; cursor: pointer;}
 
 #img1 button{
 position: absolute;
@@ -146,3 +146,4 @@ opacity: 70%;}
   position: relative;
  
 }
+
