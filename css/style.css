@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
 
 :root {
   --color-1: #ced0d5;
@@ -7,23 +7,49 @@
   --font-1: "Manrope", sans-serif;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+.hidden {
+  display: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* NAVIGATION */
+
+/* Making the Navbar fixed when scrolling */
+.nav_container {
+  position: fixed;
+}
+
 nav {
   display: flex;
-  padding: 0.5em;
-}
-nav {
+  width: 100vw;
+  padding: 1.8rem;
+  margin-top: 0px;
+  height: 2rem;
+  margin-left: 0;
+  background: white;
 }
 
 .dropbtn {
-  padding: 16px;
-  font-size: 16px;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   border: none;
+  letter-spacing: 0.15rem;
 }
 
 header img {
-  width: 160px;
-  margin-right: 5vw;
-  margin-top: ;
+  height: 1.7rem;
+  margin-left: 0.5vw;
+  margin-top: -0.5px;
 }
 
 header a {
@@ -44,12 +70,28 @@ header a {
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 0;
-  background-color: white;
-  min-width: 100vw;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: auto;
+  box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  margin-top: 1em;
+  margin-top: 3rem;
+}
+
+/* Full width dropdown background */
+.whitebg {
+  background-color: white;
+  height: 160px;
+  position: fixed;
+  z-index: -1;
+}
+
+.whitebg:before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 150vw;
+  margin-left: -40vw;
+  margin-top: -140px;
 }
 
 /* Links inside the dropdown */
@@ -62,7 +104,7 @@ header a {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  text-decoration: underline;
 }
 
 /* Show the dropdown menu on hover */
@@ -70,20 +112,62 @@ header a {
   display: block;
 }
 
-#white_bg {
+/* Search bar and the change on hover */
+.search a {
+  padding-left: 2rem;
+}
+
+.searchicon {
+  height: 1rem;
+  position: absolute;
+  margin-bottom: 0rem;
+  margin-top: 3px;
+  margin-left: 0px;
+  padding-right: 1rem;
+}
+
+.searchbar {
+  display: none;
+  height: 1px;
+  margin-top: 17px;
+  padding-left: 10px;
+}
+
+.search p {
+  display: none;
+  font-family: var(--font-1);
+  position: absolute;
+  margin-top: -2.2rem;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search:hover .searchbar {
+  display: inline-block;
+}
+
+.search:hover p {
+  display: block;
+}
+
+.search:hover a {
+  display: none;
+}
+
+/* #white_bg {
   background-color: white;
   width: 100vw;
   height: 180px;
   margin: 0;
   padding: 0;
-}
+} */
 
-.hidden {
-  display: none;
-}
-img {
-  max-width: 100%;
-}
+/* IMAGE GRID */
 section {
   display: grid;
   grid-template-columns: 35% 30% 35%;
@@ -106,7 +190,7 @@ section {
   grid-area: img3;
 }
 #test:hover {
-  opacity: 0%;: 
+  opacity: 0%;
 }
 
 #img4 {
@@ -118,4 +202,8 @@ section {
   padding: 0;
 }
 
-#img3:hover{background-color: var(--color-1); opacity: 100%; cursor: pointer;}
+#img3:hover {
+  background-color: var(--color-1);
+  opacity: 100%;
+  cursor: pointer;
+}
