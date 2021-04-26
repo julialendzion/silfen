@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+
+:root {
+  --color-1: #ced0d5;
+  --color-2: #969ead;
+  --color-3: white;
+  --font-1: "Manrope", sans-serif;
+}
+
+nav {
+  display: flex;
+  padding: 0.5em;
+}
+nav {
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+header img {
+  width: 160px;
+  margin-right: 5vw;
+  margin-top: ;
+}
+
+header a {
+  margin-right: 3vw;
+  color: black;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-size: 1vw;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  min-width: 100vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 1em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#white_bg {
+  background-color: white;
+  width: 100vw;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+img {
+  max-width: 100%;
+}
+section {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-areas:
+    "img img2 img4"
+    "img img2 img4"
+    "img img3 img4"
+    "img img3 img4";
+}
+
+#img1 {
+  grid-area: img;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+#test:hover {
+  opacity: 0%;: 
+}
+
+#img4 {
+  grid-area: img4;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+#img3:hover{background-color: var(--color-1); opacity: 100%; cursor: pointer;}
