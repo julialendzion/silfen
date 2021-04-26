@@ -58,11 +58,12 @@ header a {
   text-decoration: none;
   display: block;
   margin-left: 40vw;
+  font-size: 0.9vw;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  text-decoration: underline;
 }
 
 /* Show the dropdown menu on hover */
