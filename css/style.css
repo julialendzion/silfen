@@ -15,6 +15,12 @@
   width: 100vw;
 }
 
+.grid_container {
+  position: absolute;
+  height: auto;
+  width: 100vw;
+}
+
 body {
   background-color: var(--color-5);
   font-family: var(--font-1);
@@ -164,4 +170,48 @@ h1 {
   opacity: 60%;
   margin-top: -5px;
   margin-left: 6px;
+}
+
+/* Newletter JOIN US */
+.join-us {
+  position: absolute;
+  margin-top: 100vw;
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+
+.text-container {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 5vw 8vw;
+  background: var(--color-6);
+}
+
+.join-us img {
+  width: 39%;
+}
+
+.text-container h2 {
+  color: var(--color-1);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.text-container p {
+  opacity: 75%;
+  font-size: 1.3rem;
+}
+
+.shopbutton {
+  color: white;
+  background: var(--color-1);
+  position: absolute;
+  top: 70%;
 }
