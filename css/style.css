@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
 
 /* IMAGE GRID */
-section {
+.gridsection {
   margin-top: 5.5rem;
   position: absolute;
   display: grid;
@@ -11,10 +11,20 @@ section {
     "img img2 img4"
     "img img3 img4"
     "img img3 img4";
-  z-index: 0;
   gap: 0;
   width: 100vw;
+}
+
+.grid_container {
+  position: absolute;
   height: auto;
+  width: 100vw;
+}
+
+body {
+  background-color: var(--color-5);
+  font-family: var(--font-1);
+  font-weight: 500;
 }
 
 #img1 {
@@ -103,4 +113,105 @@ section {
 
 .container {
   position: relative;
+}
+
+/* Shop Collections */
+.shopcollections {
+  position: absolute;
+  margin-top: 60vw;
+  width: 100vw;
+  height: 10vw;
+}
+
+.productscroll {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  display: inline-flex;
+  flex-direction: column;
+  width: 18vw;
+  padding: 15px;
+  text-align: center;
+}
+
+.arrow {
+  width: 1.8vw;
+  margin-top: -30px;
+}
+
+.productrow h2 {
+  font-family: var(--font-1);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  opacity: 60%;
+}
+
+h1 {
+  font-weight: 500;
+  margin-left: 13vw;
+  margin-bottom: 4vw;
+  opacity: 60%;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.4rem;
+}
+
+.productrow p {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.07vw;
+  opacity: 60%;
+  margin-top: -5px;
+  margin-left: 6px;
+}
+
+/* Newletter JOIN US */
+.join-us {
+  position: absolute;
+  margin-top: 100vw;
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+
+.text-container {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 5vw 8vw;
+  background: var(--color-6);
+}
+
+.join-us img {
+  width: 39%;
+}
+
+.text-container h2 {
+  color: var(--color-1);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.text-container p {
+  opacity: 75%;
+  font-size: 1.3rem;
+}
+
+.shopbutton {
+  color: white;
+  background: var(--color-1);
+  position: absolute;
+  top: 70%;
 }
