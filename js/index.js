@@ -31,6 +31,7 @@ function showData(data) {
     copy.querySelector("h2").textContent = data.name;
     copy.querySelector("#bagimg").src = data.img_url;
     copy.querySelector("p").textContent = data.price + `,-`;
+    copy.querySelector("a").href = `product.html?id=${data._id}`;
     //copy.querySelector("article img").alt = data.productdisplayname;
     // copy.querySelector("h3 span").textContent = post.username;
     // copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
