@@ -63,7 +63,7 @@
       <div class="cartbag"><img src="img/cartbag.svg" alt="searchbag" /></div>
     </header>
     <main>
-      <section>
+      <section class="gridsection">
         <div class="container" id="img1">
           <img src="img/gridimage1.png" />
           <button class="shopbutton">SHOP SILFEN</button>
@@ -81,7 +81,29 @@
           <button class="shopbutton">SHOP SILFEN PLAY</button>
         </div>
       </section>
+
+      <div class="shopcollections">
+        <h1>shop classics</h1>
+        <div class="productscroll">
+          <img src="img/scroll_left.svg" alt="arrow" class="arrow" />
+          <section id="#products" class="products">
+            <template id="product-template">
+              <article class="productrow">
+                <img
+                  id="bagimg"
+                  src="http://katriinhu.com/kea/silfenbag/bag1.png"
+                  alt="bag"
+                />
+                <h2>NAME</h2>
+                <p>PRICE</p>
+              </article>
+            </template>
+          </section>
+          <img src="img/scroll_right.svg" alt="arrow" class="arrow" />
+        </div>
+      </div>
     </main>
     <footer></footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
