@@ -161,10 +161,12 @@ header a {
   display: none;
 }
 
+/* Cart Icon */
 .cartbag {
-  margin-left: 30vw;
+  position: relative;
+  margin-left: 96vw;
   height: 100%;
-  margin-top: 2px;
+  margin-top: -37px;
 }
 
 .cartbag img {
