@@ -1,0 +1,40 @@
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 220px));
+  gap: 2rem;
+  margin-top: 5vw;
+  padding: 2vw;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 17% 63% 15%;
+  background-color: var(--clor-4);
+}
+
+#buttons {
+  margin-top: 5vw;
+}
+#buttons div {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 2vw;
+}
+#buttons div:hover {
+  cursor: pointer;
+}
+#div1 {
+  background-color: var(--color-3);
+}
+#div2 {
+  background-color: var(--color-2);
+}
+article {
+  padding-right: 2vw;
+  font-family: var(--font-1);
+}
+
+article h2,
+p {
+  text-align: center;
+}
