@@ -1,0 +1,21 @@
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  gap: 2rem;
+  margin-top: 10vw;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  background-color: var(--clor-4);
+}
+
+#buttons {
+  margin-top: 10vw;
+}
+#buttons div {
+  background-color: var(--color-2);
+  height: 300px;
+  margin-bottom: 2vw;
+}

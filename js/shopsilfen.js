@@ -27,6 +27,9 @@ function showData(data) {
 
     //adjust stuff
     copy.querySelector("h2").textContent = data.name;
+    copy.querySelector("#img").src = data.img_url;
+    copy.querySelector("p").textContent = data.price + `,-`;
+    //copy.querySelector("article img").alt = data.productdisplayname;
     // copy.querySelector("h3 span").textContent = post.username;
     // copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
     //apend it
