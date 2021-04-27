@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/shopsilfen.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/product.css" />
   </head>
   <body>
     <header class="nav_container">
@@ -62,34 +62,51 @@
       </nav>
     </header>
     <main>
-      <aside></aside>
-      <section id="products">
-        <template id="product-template">
-          <article>
-            <a href=""
-              ><img
-                id="img"
-                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Totebag.jpg"
-                alt=""
-            /></a>
-            <h2>NAME</h2>
-            <p>PRICE</p>
-          </article>
-        </template>
-      </section>
-      <section id="buttons">
-        <div id="div1">
+        <div id="part1">
+            <span id="arrow"> <img  src="img/arrow.svg"></span>
+        <a id="back" href="shopsilfen.html">SHOP SILFEN</a>
+
+      <div class="img">
+        <img
+          class="productimage"
+          src=""
+          alt=""
+        />
+        <div id="changeImg">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+      </div>
+      </div>
+      <div class="about">
+
+        <section class="purchaseBox">
           <h3></h3>
-          <img src="img/SHOPSP.png" />
+          <p class="price">price:</p>
+          <p class="description"></p>
+          
+          <div id="colours">
+              <span  id="dot1" ></span>
+              <span id="dot2"></span>
+              <span id="dot3"></span>
+              <span id="dot4"></span>
+              <span id="dot5"></span>
+          </div>
+
+          <div id="btnanddetails">
+            <button>Add to basket</button>
+            <div>
+                <p>Delivery & returns</p>
+                <p>Details
+                </p>
+            </div>
+         
         </div>
-        <div id="div2">
-          <img src="img/shopsilfen.png" />
-        </div>
-        <div id="div3">
-          <img src="img/Rectangle 102.png" />
-        </div>
-      </section>
+      </div>
     </main>
-    <script src="js/shopsilfen.js"></script>
+    <footer></footer>
+    <script src="js/product.js"></script>
   </body>
 </html>
