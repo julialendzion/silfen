@@ -10,6 +10,15 @@ main {
 .about h3,
 #back {
   text-transform: uppercase;
+  font-size: 15px;
+}
+#back {
+  padding-top: -5vw;
+  text-decoration: none;
+  color: #9cc3df;
+}
+#back:hover {
+  text-decoration: underline;
 }
 
 /* DOTS SHOWING AVAILABLE COLOURS */
@@ -89,10 +98,10 @@ main {
   margin-top: 5em;
 }
 
-#arrow {
-  display: inline-block;
-  padding: 1vw;
-  margin-top: 2em;
+#part1 .backtoshop {
+  padding: 2em;
+  display: flex;
+  gap: 2vw;
 }
 
 /*STYLING THE GRID*/
@@ -117,30 +126,38 @@ main {
   font-weight: 200;
 }
 
-.about h3 {
+.about h1 {
   font-size: 2em;
   font-weight: 400;
 }
 
 button {
-  padding-top: 1.25vw;
-  padding-bottom: 1.25vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
   background: #9cc3df;
   border: none;
   color: white;
   margin: 2.5vw 0vw 2vw;
+  display: block;
+  height: 40px;
+  width: 150px;
 }
 
 #btnanddetails {
-  padding-top: 1vw;
   display: flex;
   gap: 2vw;
 }
-
 #btnanddetails div {
-  margin-top: 1.5vw;
   color: #9cc3df;
+
+  margin-top: 3%;
   line-height: 1vw;
+}
+#btnanddetails div h2 {
+  text-decoration: underline;
+}
+#btnanddetails div h2:hover {
+  cursor: pointer;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 200;
 }

@@ -63,24 +63,11 @@
     </header>
     <main>
       <aside></aside>
-      <section id="products">
-        <template id="product-template">
-          <article>
-            <a href=""
-              ><img
-                id="img"
-                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Totebag.jpg"
-                alt=""
-            /></a>
-            <h2>NAME</h2>
-            <p>PRICE</p>
-          </article>
-        </template>
-      </section>
+      <section id="products"></section>
       <section id="buttons">
         <div id="div1">
           <h3></h3>
-          <img src="img/SHOPSP.png" />
+          <img id="shopsilfenPlay" src="img/SHOPSP.png" />
         </div>
         <div id="div2">
           <img src="img/shopsilfen.png" />
@@ -90,6 +77,18 @@
         </div>
       </section>
     </main>
-    <script src="js/shopsilfen.js"></script>
+    <template id="product-template">
+      <article>
+        <a href=""
+          ><img
+            id="img"
+            src="https://upload.wikimedia.org/wikipedia/commons/8/89/Totebag.jpg"
+            alt=""
+        /></a>
+        <h2>NAME</h2>
+        <p>PRICE</p>
+      </article>
+    </template>
+    <script src="js/shopsilfen2.js"></script>
   </body>
 </html>

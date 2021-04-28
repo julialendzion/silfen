@@ -9,7 +9,7 @@
 main {
   padding-right: 3%;
   display: grid;
-  grid-template-columns: 17% 63% 15%;
+  grid-template-columns: 1fr 3.5fr 1fr;
   background-color: var(--color-5);
 }
 

@@ -21,16 +21,19 @@ getData();
 
 function showData(product) {
   console.log(product);
-  document.querySelector("#back").href = `shop` + product.collection + `.html`;
-  document.querySelector("#back").textContent = `SHOP  ` + product.collection;
+  document.querySelector("#back").href = `shop` + product.back_to + `.html`;
+  document.querySelector("#back").textContent = `SHOP  ` + product.back_to;
   document.querySelector(".img .productimage").src = product.img_url;
   document.querySelector(".img .productimage").alt = product.name;
-  document.querySelector(".about h3").textContent = product.name;
+  document.querySelector(".about h1").textContent = product.name;
   document.querySelector(".about .description").textContent =
     product.description;
   document.querySelector(
     ".about .price"
   ).textContent = `price: ${product.price} DKK`;
+  document.querySelector("#details").textContent = product.fabric;
+  document.querySelector("#details2").textContent = product.measurements;
+  document.querySelector("#delivery").textContent = product.delivery;
 
   const array = product.colours;
 
@@ -66,4 +69,16 @@ function showData(product) {
   } else {
     console.log("doesn't have this colour");
   }
+
+  document.querySelector("#clickhere").addEventListener("click", openDetails);
+  document.querySelector("#clickhere2").addEventListener("click", openDelivery);
+}
+
+function openDetails() {
+  document.querySelector("#details").classList.toggle("hidden");
+  document.querySelector("#details2").classList.toggle("hidden");
+}
+
+function openDelivery() {
+  document.querySelector("#delivery").classList.toggle("hidden");
 }
