@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+    ;
+    font-family: Manrope, sans-serif;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "box1 box1"
+        "goal1 goal1-img"
+        "goal2-img goal2"
+        "goal3 goal3-img"
+        "materials-text materials-text"
+        "materials materials";
+        grid-template-columns: 1fr 1fr;
+}
+
+.box1 {
+    background-color: #AED5B2;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    grid-area: box1;
+}
+
+.box1 h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    margin-top: 8em;
+}
+
+.text {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.text p {
+    padding: 30px;
+    margin-bottom: 4.5em;
+    font-weight: 300;
+}
+
+.goal1 {
+    grid-area: goal1;
+    margin-left: 11em;
+    margin-top: 3em;
+}
+
+.goal1 img {
+    display: block;
+    width: 70%;
+}
+
+.goal1 h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+.goal1-img {
+    grid-area: goal1-img;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+.goal1 p {
+    margin-right: 7em;
+    margin-top: 3em;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.goal2 {
+    grid-area: goal2;
+}
+
+.goal2 img {
+    width: 60%;
+}
+
+.goal2-img {
+    grid-area: goal2-img;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+}
+
+.goal2 h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.goal3 {
+    grid-area: goal3;
+}
+
+.goal3-img {
+    grid-area: goal3-img;
+}
+
+.materials-text {
+    grid-area: materials-text;
+}
+
+.materials {
+    grid-area: materials;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+}
