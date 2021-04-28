@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
   gap: 2rem;
-  margin-top: 5vw;
+  margin-top: 8vw;
   padding: 2vw;
 }
 
@@ -14,7 +14,7 @@ main {
 }
 
 #buttons {
-  margin-top: 5vw;
+  margin-top: 8vw;
 }
 #buttons div {
   height: 250px;
@@ -39,4 +39,26 @@ article h2,
 p {
   font-weight: 200;
   text-align: center;
+}
+
+#filteringIcons {
+  margin-top: 2em;
+  margin-left: 22%;
+  display: flex;
+  gap: 5em;
+  font-family: var(--font-1);
+  color: white;
+}
+
+#silfen {
+  padding: 0.3em 2em;
+  background-color: #9cc3df;
+}
+#silfenplay {
+  padding: 0.3em 2em;
+  background-color: var(--color-4);
+}
+
+.filterdropdown {
+  margin-top: 8vw;
 }

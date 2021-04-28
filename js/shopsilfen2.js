@@ -15,6 +15,9 @@ document.querySelector("#shopsilfenPlay").onclick = () => {
   filter("499");
 };
 
+function filterIcon() {
+  document.querySelector("#silfenplay").classList.toggle("hidden");
+}
 //filer function- changing the url
 function filter(filter_type) {
   console.log("filering", filter_type);
@@ -29,6 +32,7 @@ function filter(filter_type) {
     .then(function (data) {
       showData(data);
     });
+  filterIcon();
 }
 
 fetch(url, options)
