@@ -8,12 +8,9 @@ section {
   position: absolute;
   width: 100vw;
   padding-right: 3%;
-<<<<<<< HEAD
   justify-content: space-around;
   display: flex;
   background-color: var(--color-5);
-=======
->>>>>>> 969a0f21d30478864ebe81b240ff24ee7d91c753
 }
 
 section h1 {
