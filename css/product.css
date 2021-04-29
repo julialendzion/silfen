@@ -1,0 +1,163 @@
+main {
+  padding-top: 7vw;
+  display: grid;
+  grid-template-columns: 35% 55%;
+  column-gap: 10%;
+  background-color: var(--color-5);
+  font-family: var(--font-1);
+}
+
+.about h3,
+#back {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#back {
+  padding-top: -5vw;
+  text-decoration: none;
+  color: #9cc3df;
+}
+#back:hover {
+  text-decoration: underline;
+}
+
+/* DOTS SHOWING AVAILABLE COLOURS */
+.pink {
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: #f1b0f7;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
+}
+
+.blue {
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: #86cfff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
+}
+
+.rose {
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: #f7dafa;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
+}
+.gray {
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
+}
+
+.yellow {
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: #f7e7ab;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
+}
+
+/*DOTS CHANGING THE IMAGE*/
+.dot {
+  height: 0.8vw;
+  width: 0.8vw;
+  border: 1px solid;
+  border-color: #070606;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--color-5);
+}
+
+.dot:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+#changeImg {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+}
+
+#part1 .backtoshop {
+  padding: 2em;
+  display: flex;
+  gap: 2vw;
+}
+
+/*STYLING THE GRID*/
+.img {
+  margin-top: 4vw;
+  margin-left: 5vw;
+}
+
+.about {
+  margin-top: 10vw;
+}
+
+.about p {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.about .description {
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+  font-size: 1.2em;
+  width: 70%;
+  font-weight: 200;
+}
+
+.about h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+button {
+  background: #9cc3df;
+  border: none;
+  color: white;
+  margin: 2.5vw 0vw 2vw;
+  display: block;
+  height: 40px;
+  width: 150px;
+}
+
+#btnanddetails {
+  display: flex;
+  gap: 2vw;
+}
+#btnanddetails div {
+  color: #9cc3df;
+
+  margin-top: 3%;
+  line-height: 1vw;
+}
+#btnanddetails div h2 {
+  text-decoration: underline;
+}
+#btnanddetails div h2:hover {
+  cursor: pointer;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 200;
+}

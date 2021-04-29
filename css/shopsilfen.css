@@ -1,19 +1,20 @@
 #products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 220px));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
   gap: 2rem;
-  margin-top: 5vw;
+  margin-top: 8vw;
   padding: 2vw;
 }
 
 main {
+  padding-right: 3%;
   display: grid;
-  grid-template-columns: 17% 63% 15%;
-  background-color: var(--clor-4);
+  grid-template-columns: 1fr 3.5fr 1fr;
+  background-color: var(--color-5);
 }
 
 #buttons {
-  margin-top: 5vw;
+  margin-top: 8vw;
 }
 #buttons div {
   height: 250px;
@@ -36,5 +37,28 @@ article {
 
 article h2,
 p {
+  font-weight: 200;
   text-align: center;
+}
+
+#filteringIcons {
+  margin-top: 2em;
+  margin-left: 22%;
+  display: flex;
+  gap: 5em;
+  font-family: var(--font-1);
+  color: white;
+}
+
+#silfen {
+  padding: 0.3em 2em;
+  background-color: #9cc3df;
+}
+#silfenplay {
+  padding: 0.3em 2em;
+  background-color: var(--color-4);
+}
+
+.filterdropdown {
+  margin-top: 8vw;
 }
