@@ -3,7 +3,7 @@
 /* IMAGE GRID */
 .gridsection {
   margin-top: 5.5rem;
-  position: absolute;
+  position: relative;
   display: grid;
   grid-template-columns: 32.76% 24.67% 42.57%;
   grid-template-areas:
@@ -214,4 +214,19 @@ h1 {
   background: var(--color-1);
   position: absolute;
   top: 70%;
+  font-size: 1.1vw;
+}
+
+.shopbutton:hover {
+  font-size: 1.2vw;
+}
+
+.resp {
+  position: absolute;
+  margin-top: 100vw;
+}
+
+.res-hover {
+  position: sticky;
+  margin-top: -60vw;
 }
