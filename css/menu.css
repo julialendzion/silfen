@@ -177,3 +177,36 @@ header a {
 .cartbag img {
   height: 1.5rem;
 }
+
+/*DROPDOWN FILTERING MENU*/
+
+.dropdown-filter div {
+  line-height: 2em;
+  font-size: 1.3em;
+}
+
+.dropdown-filter {
+  display: block;
+}
+
+aside {
+  padding: 4vw 2vw;
+  margin-top: 5vw;
+  font-family: var(--font-1);
+  color: #7bafd4;
+}
+#filtering {
+  position: fixed;
+}
+
+#filtering h2 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+#filtering h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
