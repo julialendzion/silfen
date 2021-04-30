@@ -221,12 +221,42 @@ h1 {
   font-size: 1.2vw;
 }
 
+/* Sustainable block */
 .resp {
   position: absolute;
-  margin-top: 100vw;
+  margin-top: 130vw;
+  width: 100vw;
 }
 
-.res-hover {
-  position: sticky;
-  margin-top: -60vw;
+.hov {
+  display: none;
+}
+
+.resp:hover .hov {
+  display: block;
+  margin-top: -43vw;
+  width: 100vw;
+}
+
+/* Instagram Feed */
+.insta {
+  display: block;
+  width: 100vw;
+  position: absolute;
+  margin-top: 170vw;
+  text-align: center;
+  padding-bottom: 10vw;
+}
+
+.insta_text {
+  padding: 8vw 20vw;
+  margin-top: 2vw;
+}
+
+.insta p,
+a {
+  font-size: 1.5rem;
+  color: var(--color-1);
+  margin-top: 0;
+  text-decoration: none;
 }
