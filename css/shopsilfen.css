@@ -9,7 +9,7 @@
 main {
   padding-right: 3%;
   display: grid;
-  grid-template-columns: 1fr 3.5fr 1fr;
+  grid-template-columns: 1.35fr 3.5fr 1fr;
   background-color: var(--color-5);
 }
 
@@ -61,4 +61,13 @@ p {
 
 .filterdropdown {
   margin-top: 8vw;
+}
+aside h3 {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }

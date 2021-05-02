@@ -182,7 +182,7 @@ header a {
 
 .dropdown-filter div {
   line-height: 2em;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .dropdown-filter {
@@ -191,7 +191,7 @@ header a {
 
 aside {
   padding: 4vw 2vw;
-  margin-top: 5vw;
+  margin-top: 6.5vw;
   font-family: var(--font-1);
   color: #7bafd4;
 }
@@ -222,6 +222,7 @@ footer {
   height: auto;
   position: absolute;
   background: var(--color-6);
+  font-family: var(--font-1);
 }
 
 .container1 {

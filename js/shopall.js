@@ -37,3 +37,35 @@ function showData(data) {
     document.querySelector("section").appendChild(copy);
   });
 }
+
+//filtering menu drop-downs working
+
+document.querySelector("#catbtn").onclick = () => {
+  filterMenu();
+};
+document.querySelector("#colbtn").onclick = () => {
+  filterMenu2();
+};
+document.querySelector("#sizbtn").onclick = () => {
+  filterMenu3();
+};
+document.querySelector("#pribtn").onclick = () => {
+  filterMenu4();
+};
+
+function filterMenu() {
+  document.querySelector("#category").classList.toggle("hidden");
+  document.querySelector("#catbtn span").classList.toggle("rotate");
+}
+function filterMenu2() {
+  document.querySelector("#colour").classList.toggle("hidden");
+  document.querySelector("#colbtn span").classList.toggle("rotate");
+}
+function filterMenu3() {
+  document.querySelector("#size").classList.toggle("hidden");
+  document.querySelector("#sizbtn span").classList.toggle("rotate");
+}
+function filterMenu4() {
+  document.querySelector("#price").classList.toggle("hidden");
+  document.querySelector("#pribtn span").classList.toggle("rotate");
+}
