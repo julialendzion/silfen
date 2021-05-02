@@ -58,6 +58,7 @@ section h1 {
 
 .collectionbutton {
   position: absolute;
+  display: flex;
   color: white;
   font-size: 1.1vw;
   padding: 12px 24px;
