@@ -33,6 +33,7 @@ main {
     color: white;
     width: 100vw;
     grid-area: box1;
+    margin-bottom: 2em;
 }
 
 .box1 h1 {
@@ -44,6 +45,13 @@ main {
     margin-top: 8em;
 }
 
+.box1 h2 {
+    font-weight: 300;
+    margin-right: 20em;
+    margin-left: 20em;
+    font-size: 1.3em;
+}
+
 .text {
     text-decoration: underline;
     display: flex;
@@ -53,13 +61,13 @@ main {
 
 .text p {
     padding: 30px;
-    margin-bottom: 4.5em;
+    margin-bottom: 3em;
     font-weight: 300;
 }
 
 .goal1 {
     grid-area: goal1;
-    margin-left: 11em;
+    margin-left: 13em;
     margin-top: 3em;
 }
 
@@ -76,21 +84,21 @@ main {
 
 .goal1-img {
     grid-area: goal1-img;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    margin-left: 0;
     margin-top: 3em;
 }
 
 .goal1 p {
     margin-right: 7em;
     margin-top: 3em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 300;
 }
 
 .goal2 {
     grid-area: goal2;
+    margin-top: 4em;
 }
 
 .goal2 img {
@@ -99,7 +107,7 @@ main {
 
 .goal2-img {
     grid-area: goal2-img;
-    width: 70%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 6em;
@@ -110,21 +118,99 @@ main {
     font-weight: 400;
 }
 
+.goal2 p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-right: 9em;
+}
+
 .goal3 {
     grid-area: goal3;
+    margin-left: 13em;
+    margin-top: 5em;
+}
+
+.goal3 h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.goal3 img {
+    grid-area: goal3-img;
+    width: 70%;
+}
+
+.goal3 p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-right: 5em;
 }
 
 .goal3-img {
-    grid-area: goal3-img;
+    width: 80%;
+    margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 .materials-text {
     grid-area: materials-text;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 4em;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 .materials {
     grid-area: materials;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3em;
+    grid-gap: 1em;
+    margin-left: 10em;
+}
+
+.materials img {
+    width: 80%;
+}
+
+.materials h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.materials p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-right: 10em;
+    margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 990px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "goal1"
+            "goal1-img"
+            "goal2"
+            "goal2-img"
+            "goal3"
+            "goal3-img"
+            "materials-text"
+            "materials";
+    }
+
+    .box1 {
+        margin: 0;
+    }
+
+    .box1 h2 {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .materials {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
