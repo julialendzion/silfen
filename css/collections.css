@@ -117,6 +117,18 @@ section h1 {
   width: 100%;
 }
 
+.container2 button {
+  border-radius: 0vw;
+  color: black;
+  background-color: var(--color-4);
+  opacity: 70%;
+  font-size: 1.1rem;
+  width: 40%;
+  border: none;
+  padding: 0.3vw 0vw;
+  margin-bottom: 20px;
+}
+
 footer {
   display: block;
 }
