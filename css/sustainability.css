@@ -6,6 +6,7 @@ body {
     grid-template-areas:
         "header"
         "main"
+        "footer"
     ;
     font-family: Manrope, sans-serif;
 }
@@ -183,6 +184,10 @@ main {
     font-weight: 300;
     margin-right: 10em;
     margin-bottom: 3em;
+}
+
+footer {
+    grid-area: footer;
 }
 
 @media only screen and (max-width: 990px) {
