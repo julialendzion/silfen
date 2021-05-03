@@ -188,7 +188,9 @@ main {
 
 footer {
     grid-area: footer;
-}
+    display: block;
+    margin-top: 590vw;
+} 
 
 @media only screen and (max-width: 990px) {
     main {
@@ -291,5 +293,9 @@ footer {
     .materials p {
         margin-right: 0;
         text-align: justify;
+    }
+
+    footer {
+        margin-top: 850vw;
     }
 }
