@@ -82,7 +82,41 @@ section h1 {
   clear: both;
 }
 
+.container1 {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-1);
+  color: black;
+  font-size: 1.1rem;
+}
+
+.container1 a {
+  color: black;
+  padding: 0.5vw 2vw;
+  font-size: 1.1rem;
+}
+
+.container1 p {
+  opacity: 25%;
+  padding: 0vw 2vw;
+}
+
+.container2 p {
+  padding-bottom: 10px;
+  color: black;
+  margin-top: -5px;
+}
+
+.container2 h4 {
+  margin-top: 20px;
+  letter-spacing: 0.1vw;
+}
+
+.container2 img {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
 footer {
   display: block;
-  margin-top: 195vw;
 }
