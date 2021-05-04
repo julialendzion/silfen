@@ -19,6 +19,7 @@ body {
   font-size: 2rem;
   margin-bottom: 0;
   margin-top: 8em;
+  margin-left: -100rem;
   color: white;
 }
 
@@ -29,6 +30,7 @@ body {
   font-size: 1.7rem;
   margin-bottom: 0;
   margin-top: 8em;
+  margin-left: -100rem;
   color: black;
 }
 
@@ -39,7 +41,6 @@ body {
 }
 
 .text {
-  display: flex;
   justify-content: left;
   font-size: 1.3rem;
   margin-top: -20vw;
@@ -48,37 +49,49 @@ body {
 
 .recycleimg {
   opacity: 27%;
+  margin-top: 7vw;
+  margin-left: 45rem;
+  width: 27%;
+  height: auto;
+  transform: rotate(353deg);
 }
 
 img {
-  width: 50%;
+  width: 80%;
 }
 .introduction {
   display: flex;
 }
 
 .infotext h3 {
-  display: flex;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.infotext p {
+  font-size: 2.5rem;
+  font-family: "Manrope", sans-serif;
 }
 
 .infotext {
-  display: flex;
   justify-content: center;
   font-size: 1.3rem;
+  margin-top: 15vw;
+  margin-left: 2vw;
+  font-family: "Manrope", sans-serif;
 }
 
 /*collection info columns*/
 section {
   position: absolute;
   margin-top: 15vw;
+  display: flex;
 }
 
 .row {
   margin-top: 50vw;
   position: absolute;
   width: 100vw;
-  padding-right: 3%;
   justify-content: space-around;
   display: flex;
   background-color: var(--color-5);
@@ -88,10 +101,19 @@ section h5 {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   opacity: 60%;
-  margin-top: -10vw;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
   font-size: 1.4rem;
+  color: black;
+  position: relative;
+}
+
+section p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 60%;
+  letter-spacing: 0.2vw;
+  font-size: 1.5rem;
   color: black;
   position: relative;
 }
@@ -102,7 +124,6 @@ section h5 {
   margin-top: 2vw;
   padding: 10px;
   position: relative;
-  grid-area: info;
 }
 
 .row:after {
@@ -114,5 +135,5 @@ section h5 {
 /* footer */
 
 footer {
-  margin-top: 100vw;
+  margin-top: 110vw;
 }
