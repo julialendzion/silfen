@@ -39,3 +39,14 @@ function showData(data) {
     document.querySelector(".products").appendChild(copy);
   });
 }
+
+document.querySelector("#img3").addEventListener("mouseover", sale);
+function sale() {
+  console.log("hovering works");
+
+  document.querySelector("#par").style.display = "inline-block";
+  document.querySelector("#img3").addEventListener("mouseout", saleOut);
+}
+function saleOut() {
+  document.querySelector("#par").style.display = "none";
+}
