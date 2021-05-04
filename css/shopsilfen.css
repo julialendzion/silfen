@@ -60,15 +60,17 @@ p {
   gap: 1em;
   cursor: pointer;
 }
+
 #silfenplay {
   padding: 0.3em 1em 0.3em 2em;
   background-color: var(--color-4);
   display: flex;
-
   gap: 1em;
   cursor: pointer;
 }
-
+.hidden {
+  display: none;
+}
 .filterdropdown {
   margin-top: 8vw;
 }
