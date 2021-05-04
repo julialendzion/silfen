@@ -25,7 +25,8 @@ main {
 
 /* CART */
 
-#cart {
+#cart,
+#billing {
   display: flex;
   flex-direction: column;
   margin-top: 3vw;
@@ -49,6 +50,10 @@ main {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2vw;
+}
+
+#row1 {
+  margin-left: 3vw;
 }
 
 #row1 p {
@@ -93,7 +98,7 @@ main {
 #cartsum {
   display: flex;
   margin-left: 73vw;
-  margin-top: 2vw;
+  margin-top: 5vw;
   width: 15vw;
   flex-direction: column;
   font-size: 1.2rem;
@@ -110,6 +115,7 @@ main {
   margin: 0;
   font-size: 1.2rem;
   padding-right: 2vw;
+  letter-spacing: 0.05vw;
 }
 
 .cartsum-flex p {
@@ -117,12 +123,20 @@ main {
 }
 
 #cartsum button {
-  background-color: var(--color-4);
+  background-color: #000;
+  opacity: 0.7;
   border: none;
   border-radius: 20px;
   padding: 0.5vw 1vw;
   margin-top: 2vw;
   width: 100px;
+  color: #fff;
+  letter-spacing: 0.05vw;
+  font-weight: 300;
+}
+
+#cartsum button:hover {
+  background-color: var(--color-4);
 }
 
 .checkboxflex {
@@ -194,4 +208,185 @@ main {
   font-size: 1.1rem;
   width: 15vw;
   flex-direction: column;
+}
+
+/* lines */
+
+hr {
+  opacity: 0.7;
+  width: 80vw;
+  height: 1px;
+  background-color: var(--color-1);
+  border: 1px var(--color-1);
+}
+
+/* BILLING */
+
+#billing h2 {
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 0.1vw;
+  font-size: 1.2rem;
+  margin-bottom: 2vw;
+}
+
+.payment-flex h4 {
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 0.1vw;
+  font-size: 1.2rem;
+  margin-bottom: 2vw;
+  margin-left: 4vw;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2vw;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: -15vw;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+#payment {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vw;
+  width: 100vw;
+  align-items: center;
+  color: black;
+  font-family: var(--font-1);
+  font-size: 1.2rem;
+  width: 70%;
+  margin-left: 20vw;
+}
+
+.container-shipping {
+  display: flex;
+  padding: 0vw 2vw;
+}
+
+.ship-left {
+  display: flex;
+  flex-direction: column;
+  padding: 0vw 2vw;
+}
+
+.ship-middle {
+  display: flex;
+  flex-direction: column;
+  padding: 0vw 2vw;
+}
+
+.ship-middle h5 {
+  margin-top: 1vw;
+}
+
+.ship-middle p {
+  margin-top: -20px;
+}
+
+.post2 {
+  margin-top: -5px;
+}
+
+.ship-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0vw 2vw;
+}
+
+.ship-right p {
+  padding: 0.3vw 1vw;
+}
+
+.box {
+  padding: 1.5vw 0vw;
+}
+
+.vertical-line {
+  border-left: 1px solid var(--color-1);
+  height: 200px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  padding-right: 30px;
+}
+
+.flex-pay {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-pay div {
+  padding: 0vw 2vw;
+}
+
+.pay-logo {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  margin-top: 5px;
+  margin-left: -12px;
+}
+
+.paypal {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.pay-logo a {
+  padding: 1vw 0vw;
+}
+.pay-left,
+.pay-right,
+.pay-middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.price1 {
+  margin-left: 20px;
+}
+
+.price2 {
+  margin-left: 23px;
+}
+
+.price3 {
+  padding-left: 12px;
+}
+
+.terms {
+  margin-left: 2vw;
+  margin-top: 0;
+}
+
+.linesum {
+  width: 20vw;
+}
+
+.info-container input {
+  border: none;
+  background-color: var(--color-5);
+  margin: 0vw 5vw;
+  margin-top: 1vw;
+}
+
+.info-container {
+  margin-left: 5vw;
+}
+
+.billingline {
+  width: 90%;
+  margin-left: 5vw;
+  opacity: 0.3;
 }
