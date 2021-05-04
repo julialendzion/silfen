@@ -82,7 +82,7 @@ section h1 {
   opacity: 90%;
 }
 
-/* footer */
+/* ???????? */
 
 section {
   position: absolute;
@@ -125,3 +125,7 @@ section h5 {
 }
 
 /* footer */
+
+footer {
+  margin-top: 50vw;
+}

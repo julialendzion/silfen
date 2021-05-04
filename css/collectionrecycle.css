@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
+
 /*picture with h1 and h2*/
 body {
-  display: flex;
   font-family: Manrope, sans-serif;
 }
 
@@ -8,13 +9,14 @@ body {
   text-align: left;
   width: 100vw;
   margin-bottom: 2em;
+  display: flex;
 }
 
 .box1 h1 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-bottom: 0;
   margin-top: 8em;
   color: white;
@@ -32,27 +34,38 @@ body {
 
 .box1 img {
   width: 100%;
+  height: auto;
+  margin-top: -20vw;
 }
 
 .text {
-  text-decoration: underline;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-size: 1.3rem;
-}
-
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+  margin-top: -20vw;
+  margin-left: 2vw;
 }
 
 .recycleimg {
   opacity: 27%;
+}
+
+img {
+  width: 50%;
+}
+.introduction {
+  display: flex;
+}
+
+.infotext h3 {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.infotext {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
 }
 
 /*collection info columns*/
@@ -62,6 +75,7 @@ section {
 }
 
 .row {
+  margin-top: 50vw;
   position: absolute;
   width: 100vw;
   padding-right: 3%;
@@ -88,6 +102,7 @@ section h5 {
   margin-top: 2vw;
   padding: 10px;
   position: relative;
+  grid-area: info;
 }
 
 .row:after {
@@ -97,3 +112,7 @@ section h5 {
 }
 
 /* footer */
+
+footer {
+  margin-top: 100vw;
+}
