@@ -65,10 +65,11 @@ main {
   align-items: center;
   width: 70vw;
   justify-content: space-around;
+  margin-bottom: 1vw;
 }
 
 #row2 img {
-  width: 13vw;
+  width: 11vw;
 }
 
 #row2 button {
@@ -81,16 +82,22 @@ main {
   border: none;
 }
 
-.linecart {
-  height: 1.3px;
+.bagname {
+  margin-left: -10vw;
+}
+
+.quantity {
+  margin-left: -5vw;
 }
 
 #cartsum {
   display: flex;
-  margin-left: 65vw;
-  margin-top: 10vw;
+  margin-left: 73vw;
+  margin-top: 2vw;
   width: 15vw;
   flex-direction: column;
+  font-size: 1.2rem;
+  padding-bottom: 10vw;
 }
 
 .cartsum-flex {
@@ -101,6 +108,7 @@ main {
 
 .cartsum-flex h3 {
   margin: 0;
+  font-size: 1.2rem;
   padding-right: 2vw;
 }
 
@@ -113,7 +121,8 @@ main {
   border: none;
   border-radius: 20px;
   padding: 0.5vw 1vw;
-  margin-top: 3vw;
+  margin-top: 2vw;
+  width: 100px;
 }
 
 .checkboxflex {
@@ -176,12 +185,13 @@ main {
 
 .salecode input {
   width: 60%;
-  margin-left: 4vw;
+  margin-left: 25px;
 }
 
 #codeflex {
   margin-top: 1vw;
   display: flex;
+  font-size: 1.1rem;
   width: 15vw;
   flex-direction: column;
 }

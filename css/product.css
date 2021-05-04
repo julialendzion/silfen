@@ -1,12 +1,12 @@
 main {
   padding-top: 7vw;
-  display: grid;
-  grid-template-columns: 35% 55%;
-  column-gap: 10%;
+
   background-color: var(--color-5);
   font-family: var(--font-1);
 }
-
+#part1 {
+  margin-top: 8vw;
+}
 .about h3,
 #back {
   text-transform: uppercase;
@@ -17,14 +17,16 @@ main {
   text-decoration: none;
   color: #9cc3df;
 }
-#back:hover {
-  text-decoration: underline;
+#part1 .backtoshop {
+  padding: 2em;
+  display: flex;
+  gap: 2vw;
 }
 
 /* DOTS SHOWING AVAILABLE COLOURS */
 .pink {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 4vw;
+  width: 4vw;
   background-color: #f1b0f7;
   border-radius: 50%;
   display: inline-block;
@@ -33,8 +35,8 @@ main {
 }
 
 .blue {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 4vw;
+  width: 4vw;
   background-color: #86cfff;
   border-radius: 50%;
   display: inline-block;
@@ -43,8 +45,8 @@ main {
 }
 
 .rose {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 4vw;
+  width: 4vw;
   background-color: #f7dafa;
   border-radius: 50%;
   display: inline-block;
@@ -52,8 +54,8 @@ main {
   margin-right: 0.8vw;
 }
 .gray {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 4vw;
+  width: 4vw;
   background-color: gray;
   border-radius: 50%;
   display: inline-block;
@@ -73,8 +75,8 @@ main {
 
 /*DOTS CHANGING THE IMAGE*/
 .dot {
-  height: 0.8vw;
-  width: 0.8vw;
+  height: 1.1vw;
+  width: 1.1vw;
   border: 1px solid;
   border-color: #070606;
   border-radius: 50%;
@@ -84,66 +86,30 @@ main {
   background-color: var(--color-5);
 }
 
-.dot:hover {
-  cursor: pointer;
-  background-color: black;
-}
-
 #changeImg {
   display: flex;
   justify-content: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
-}
-
-#part1 .backtoshop {
-  padding: 2em;
-  display: flex;
-  gap: 2vw;
-}
-
-/*STYLING THE GRID*/
-.img {
-  margin-top: 4vw;
-  margin-left: 5vw;
-}
-
-.about {
-  margin-top: 10vw;
-}
-
-.about p {
-  font-size: 1.2em;
-  font-weight: 200;
-}
-.about .description {
-  padding-top: 3vw;
-  padding-bottom: 1vw;
-  font-size: 1.2em;
-  width: 70%;
-  font-weight: 200;
-}
-
-.about h1 {
-  font-size: 2em;
-  font-weight: 400;
+  margin-top: 2vw;
 }
 
 button {
   background: #9cc3df;
   border: none;
   color: white;
-  margin: 2.5vw 0vw 2vw;
+  margin: auto auto;
   display: block;
   height: 40px;
   width: 150px;
+  border-radius: 20em;
 }
 
 #btnanddetails {
-  display: flex;
-  gap: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 #btnanddetails div {
   color: #9cc3df;
@@ -161,8 +127,143 @@ h2 {
   font-size: 1.2em;
   font-weight: 200;
 }
+.about p {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: auto auto;
+}
+.about .description {
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+  font-size: 1.2em;
+  width: 90%;
+  font-weight: 200;
+  margin: auto auto;
+  line-height: 4vw;
+  text-align: justify;
+}
+.about {
+  padding: 8vw;
+}
+.about h1,
+p {
+  font-size: 2em;
+  font-weight: 400;
+  margin: auto auto;
+  text-align: center;
+  padding: 3vw;
+}
 
-/*footer*/
-main {
-  padding-bottom: 8vw;
+#colours {
+  padding: 4vw;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .pink {
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  .blue {
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  .rose {
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+  .gray {
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  .yellow {
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  /*DOTS CHANGING THE IMAGE*/
+  .dot {
+    height: 0.8vw;
+    width: 0.8vw;
+  }
+  main {
+    padding-top: 7vw;
+    display: grid;
+    grid-template-columns: 35% 55%;
+    column-gap: 10%;
+    background-color: var(--color-5);
+    font-family: var(--font-1);
+  }
+  #part1 {
+    margin-top: 0;
+  }
+  .about h3,
+  #back {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  #back:hover {
+    text-decoration: underline;
+  }
+
+  .dot:hover {
+    cursor: pointer;
+    background-color: black;
+  }
+
+  button {
+    border-radius: 0;
+    margin: 2.5vw 0vw 2vw;
+  }
+
+  #btnanddetails {
+    display: flex;
+    gap: 2vw;
+    margin: 0;
+    text-align: left;
+  }
+
+  /*STYLING THE GRID*/
+  .img {
+    margin-top: 4vw;
+    margin-left: 5vw;
+  }
+
+  .about {
+    margin-top: 10vw;
+    padding: 0;
+  }
+
+  .about .description {
+    margin: 0vw 0 2vw 0vw;
+    width: 70%;
+    line-height: initial;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 0;
+  }
+  .about h1,
+  p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .about h1,
+  p {
+    padding-bottom: 2vw;
+  }
+  /*footer*/
+  main {
+    padding-bottom: 8vw;
+  }
+  #colours {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 }

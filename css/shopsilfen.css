@@ -1,97 +1,147 @@
-#products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
-  gap: 2rem;
-  margin-top: 8vw;
-  padding: 2vw;
+#filteringIcons {
+  display: none;
 }
-
-main {
-  padding-right: 3%;
-  display: grid;
-  grid-template-columns: 1.35fr 3.5fr 1fr;
-  background-color: var(--color-5);
-}
-
-#buttons {
-  margin-top: 8vw;
-}
-#buttons div {
-  height: 250px;
-  width: 250px;
-  margin-bottom: 2vw;
-}
-#buttons div:hover {
-  cursor: pointer;
-}
-#div1 {
-  background-color: var(--color-3);
-}
-#div2 {
-  background-color: var(--color-2);
-}
-article {
-  padding-right: 2vw;
-  font-family: var(--font-1);
-}
-
 article h2,
 p {
   font-weight: 200;
   text-align: center;
 }
-
-#filteringIcons {
-  margin-top: 2em;
-  margin-left: 22%;
-  display: flex;
-  gap: 5em;
+article {
+  padding-right: 2vw;
   font-family: var(--font-1);
-  color: white;
-}
-
-#silfen {
-  padding: 0.3em 2em;
-  background-color: #9cc3df;
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-
-  gap: 1em;
-  cursor: pointer;
-}
-
-#silfenplay {
-  padding: 0.3em 1em 0.3em 2em;
-  background-color: var(--color-4);
-  display: flex;
-  gap: 1em;
-  cursor: pointer;
-}
-.hidden {
-  display: none;
-}
-.filterdropdown {
-  margin-top: 8vw;
-}
-aside h3 {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.rotate {
-  transform: rotate(180deg);
 }
 main {
-  padding-bottom: 8vw;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--color-5);
+}
+#div3 h2 {
+  display: none;
+}
+#div2 {
+  padding-top: 0.3vw;
+}
+#div1,
+#div2 {
+  margin-top: 5vw;
+  width: 100vw;
 }
 
-#div3 h2 {
-  padding: 105px 90px;
-  background-color: var(--color-2);
-  color: white;
-  font-family: var(--font-1);
-  letter-spacing: 0.2vw;
-  font-size: 26px;
+#buttons {
+  display: flex;
+}
+
+#products {
+  width: 50%;
+  gap: 2rem;
+  margin-top: 8vw;
+  padding: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+    gap: 2rem;
+    margin-top: 8vw;
+    padding: 2vw;
+    width: 100%;
+  }
+
+  main {
+    padding-right: 3%;
+    display: grid;
+    grid-template-columns: 1.35fr 3.5fr 1fr;
+    background-color: var(--color-5);
+  }
+
+  #buttons {
+    margin-top: 8vw;
+    display: block;
+  }
+  #buttons div {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 2vw;
+  }
+  #buttons div:hover {
+    cursor: pointer;
+  }
+  #div1 {
+    background-color: var(--color-3);
+    margin: 0;
+  }
+  #div2 {
+    background-color: var(--color-2);
+    padding: 0;
+    margin: 0;
+  }
+  article {
+    padding-right: 2vw;
+    font-family: var(--font-1);
+  }
+
+  article h2,
+  p {
+    font-weight: 200;
+    text-align: center;
+  }
+
+  #filteringIcons {
+    margin-top: 2em;
+    margin-left: 22%;
+    display: flex;
+    gap: 5em;
+    font-family: var(--font-1);
+    color: white;
+  }
+
+  #silfen {
+    padding: 0.3em 2em;
+    background-color: #9cc3df;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+
+    gap: 1em;
+    cursor: pointer;
+  }
+
+  #silfenplay {
+    padding: 0.3em 1em 0.3em 2em;
+    background-color: var(--color-4);
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  .filterdropdown {
+    margin-top: 8vw;
+  }
+  aside h3 {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+  main {
+    padding-bottom: 8vw;
+  }
+
+  #div3 h2 {
+    padding: 105px 90px;
+    background-color: var(--color-2);
+    color: white;
+    font-family: var(--font-1);
+    letter-spacing: 0.2vw;
+    font-size: 26px;
+    display: block;
+  }
 }
