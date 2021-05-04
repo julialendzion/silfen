@@ -242,6 +242,7 @@ footer {
   color: black;
   padding: 0.5vw 2vw;
   font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .container1 a:hover {
@@ -266,6 +267,7 @@ footer {
   opacity: 20%;
   font-weight: 500;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .container2 p {
@@ -289,4 +291,29 @@ footer {
   border: none;
   padding: 0.3vw 0vw;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+
+  html, body {
+    font-size: 12px;
+  }
+  footer {
+    flex-direction: column;
+
+}
+
+.container1 {
+  padding: 3vw;
+  margin-left: 10vw;
+}
+
+.container2 {
+  width: 80vw;
+  background-color: var(--color-5);
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  padding: 2vw 2vw;
+  margin-top: 5vw;
 }
