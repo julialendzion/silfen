@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <header class="nav_container">
+      <nav>
+        <a href="index.html">
+          <img id="logo" href="index.html" src="img/bluelogo.png"
+        /></a>
+        <div class="dropdown">
+          <a href="shop.html" class="dropbtn">SHOP</a>
+          <div class="dropdown-content">
+            <a href="shopall.html">Shop All</a>
+            <a href="shopsilfen.html"> Shop Silfen</a>
+            <a href="shopsilfenplay.html">Shop Silfen Play</a>
+
+            <div class="whitebg"></div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="collections.html" class="dropbtn">COLLECTIONS</a>
+          <div class="dropdown-content">
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
+            <a href="#">Link 7</a>
+            <div class="whitebg"></div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="sustainability.html" class="dropbtn">SUSTAINABILITY</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <div class="whitebg"></div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="search">
+            <img
+              src="img/searchicon.svg"
+              alt="searchicon"
+              class="searchicon searchhover"
+            />
+            <img
+              src="/img/searchbar.svg"
+              alt="searchbar"
+              class="searchbar searchhover"
+            />
+            <p class="searchhover">Type here...</p>
+            <a href="#" class="dropbtn">SEARCH</a>
+          </div>
+        </div>
+      </nav>
+      <div class="cartbag"><img src="img/cartbag.svg" alt="searchbag" /></div>
+    </header>
+
+    <main>
+      <div id="breadcrumbs">
+        <img id="arrow" src="img/arrow.svg" />
+        <a id="back" href="shopsilfen.html">SHOP SILFEN</a>
+      </div>
+      <section id="cart">
+        <h1>CART</h1>
+        <div id="row1">
+          <p class="producttitle">PRODUCT</p>
+          <p>PRICE</p>
+          <p>QUANTITY</p>
+          <p>TOTAL (tax incl.)</p>
+        </div>
+        <img class="linecart" src="/img/Linecart.svg" alt="line" />
+
+        <div id="row2">
+          <img
+            id="productimage"
+            class="cart-item"
+            src="http://katriinhu.com/kea/silfenbag/bag1.png"
+            alt=""
+          />
+          <p class="cart-item">bag name</p>
+          <p class="price-one cart-item"><span>500</span>DKK</p>
+          <div class="counter">
+            <button class="minus cart-item" type="button">-</button>
+            <input
+              class="cart-item"
+              type="number"
+              name="NAME-"
+              id="fid-"
+              min="0"
+              max="20"
+            />
+            <button class="plus cart-item" type="button">+</button>
+          </div>
+          <p class="price-total cart-item"><span>500</span>DKK</p>
+        </div>
+        <img class="linecart" src="/img/Linecart.svg" alt="line" />
+      </section>
+      <section id="cartsum">
+        <div class="cartsum-flex">
+          <h3>Subtotal</h3>
+          <p class="price"><span id="price">500</span>DKK</p>
+        </div>
+        <div id="codeflex">
+          <span class="">Got a promo code?</span>
+          <label class="checkboxflex">
+            <input class="inputcheck" type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="salecode">
+            <input
+              class="codefield"
+              type="text"
+              name="code"
+              placeholder="sale10"
+            />
+          </label>
+        </div>
+        <button>CHECKOUT</button>
+      </section>
+    </main>
+    <script src="/js/cart.js"></script>
+  </body>
+</html>
