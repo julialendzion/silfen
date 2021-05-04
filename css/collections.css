@@ -28,6 +28,19 @@ section h1 {
   position: relative;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  margin-top: 2vw;
+  position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Collection buttons */
 
 #snow button {
@@ -69,10 +82,39 @@ section h1 {
   opacity: 90%;
 }
 
+/* footer */
+
+section {
+  position: absolute;
+  margin-top: 15vw;
+}
+
+.row {
+  position: absolute;
+  width: 100vw;
+  padding-right: 3%;
+  justify-content: space-around;
+  display: flex;
+  background-color: var(--color-5);
+}
+
+section h5 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 60%;
+  margin-top: -10vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.4rem;
+  color: black;
+  position: relative;
+}
+
 .column {
   float: left;
   width: 33.33%;
   margin-top: 2vw;
+  padding: 10px;
   position: relative;
 }
 
@@ -81,6 +123,8 @@ section h1 {
   display: table;
   clear: both;
 }
+
+/* footer */
 
 .container1 {
   display: flex;
