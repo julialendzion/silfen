@@ -14,7 +14,7 @@
           <img id="logo" href="index.html" src="img/bluelogo.png"
         /></a>
         <div class="dropdown">
-          <a href="shop.html" class="dropbtn">SHOP</a>
+          <a href="shopall.html" class="dropbtn">SHOP</a>
           <div class="dropdown-content">
             <a href="shopall.html">Shop All</a>
             <a href="shopsilfen.html"> Shop Silfen</a>
@@ -62,8 +62,8 @@
         </div>
       </nav>
       <div id="filteringIcons">
-        <div id="silfen">SILFEN</div>
-        <div id="silfenplay">SILFEN PLAY</div>
+        <div id="silfen">SILFEN <span>X</span></div>
+        <div id="silfenplay">SILFEN PLAY<span>X</span></div>
       </div>
     </header>
     <main>
@@ -79,47 +79,46 @@
           <div class="dropdown-filter">
             <div class="hidden" id="category">
               <div>
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">Bumbag</label>
+                <input
+                  type="checkbox"
+                  data-category="Mini Bags"
+                  id="bumbag"
+                  name="bumbag"
+                />
+                <label for="bumbag">Mini Bag</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales" />
+                <input
+                  type="checkbox"
+                  data-category="Shoulder Bags"
+                  id="scales"
+                  name="scales"
+                />
+                <label for="scales">Shoulder Bag</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  data-category="Crossbody Bags"
+                  id="crossbody"
+                  name="scales"
+                />
                 <label for="scales">Crossbody Bag </label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales" />
+                <input
+                  type="checkbox"
+                  data-category="Wallets"
+                  id="scales"
+                  name="scales"
+                />
                 <label for="scales">Wallets</label>
               </div>
-              <div>
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">Shoulder Bag</label>
-              </div>
             </div>
           </div>
 
           <img src="img/Line.svg" />
 
-          <h3 id="colbtn">
-            COLOUR <span><img src="img/Group 5.svg" /></span>
-          </h3>
-
-          <div class="dropdown-filter">
-            <div class="hidden" id="colour">
-              <div>
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">pink</label>
-              </div>
-              <div>
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">rose </label>
-              </div>
-              <div>
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">blue</label>
-              </div>
-            </div>
-          </div>
-          <img src="img/Line.svg" />
           <h3 id="sizbtn">
             SIZE <span><img src="img/Group 5.svg" /></span>
           </h3>
@@ -127,15 +126,30 @@
           <div class="dropdown-filter">
             <div class="hidden" id="size">
               <div>
-                <input type="checkbox" id="scales" name="scales" />
+                <input
+                  type="checkbox"
+                  data-category="small"
+                  id="scales"
+                  name="scales"
+                />
                 <label for="scales">small</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales" />
+                <input
+                  type="checkbox"
+                  data-category="medium"
+                  id="scales"
+                  name="scales"
+                />
                 <label for="scales">medium </label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales" />
+                <input
+                  type="checkbox"
+                  data-category=""
+                  id="scales"
+                  name="scales"
+                />
                 <label for="scales">big</label>
               </div>
             </div>
@@ -149,16 +163,62 @@
           <div class="dropdown-filter">
             <div class="hidden" id="price">
               <div id="price">
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">0-200</label>
+                <input
+                  type="checkbox"
+                  data-category="0-300"
+                  id="scales"
+                  name="scales"
+                />
+                <label for="scales">0-300</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales" />
-                <label for="scales">200-500</label>
+                <input
+                  type="checkbox"
+                  data-category="300-500"
+                  id="scales"
+                  name="scales"
+                />
+                <label for="scales">300-500</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales" />
+                <input
+                  type="checkbox"
+                  data-category="500+"
+                  id="scales"
+                  name="scales"
+                />
                 <label for="scales">500+</label>
+              </div>
+            </div>
+          </div>
+          <img src="img/Line.svg" />
+          <h3 id="colbtn">
+            COLOUR <span><img src="img/Group 5.svg" /></span>
+          </h3>
+
+          <div class="dropdown-filter">
+            <div class="hidden" id="colour">
+              <div>
+                <input
+                  type="checkbox"
+                  data-category="pink"
+                  id="scales"
+                  name="scales"
+                />
+                <label for="scales">pink</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  data-category="rose"
+                  id="scales"
+                  name="scales"
+                />
+                <label for="scales">rose </label>
+              </div>
+              <div>
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">blue</label>
               </div>
             </div>
           </div>
@@ -168,14 +228,15 @@
       <section id="products"></section>
       <section id="buttons">
         <div id="div1">
-          <h3></h3>
-          <img id="shopsilfenPlay" src="img/SHOPSP.png" />
+          <a href="shopsilfenplay.html">
+            <img id="shopsilfenPlay" src="img/SHOPSP.png"
+          /></a>
         </div>
         <div id="div2">
-          <img src="img/shopsilfen.png" />
+          <a href="shopsilfen.html"> <img src="img/shopsilfen.png" /></a>
         </div>
         <div id="div3">
-          <img src="img/Rectangle 102.png" />
+          <h2>SALE</h2>
         </div>
       </section>
     </main>

@@ -1,44 +1,64 @@
-function getData() {
-  fetch("https://kea21-6a0c.restdb.io/rest/products", {
-    method: "GET",
-    headers: {
-      "x-apikey": "60339bce5ad3610fb5bb64e6",
-    },
-  })
-    .then((res) => res.json())
-    .then((response) => {
-      showData(response);
+const url = `https://kea21-6a0c.restdb.io/rest/products`;
+
+//API key
+
+//560263607f98025500000000?s=t
+//The API key
+const options = {
+  headers: {
+    "x-apikey": "60339bce5ad3610fb5bb64e6",
+  },
+};
+
+//chosing the filtering buttons, fetching
+
+//filer function- changing the url
+function filter(filter_type) {
+  console.log("filering", filter_type);
+  document.querySelector("section").innerHTML = "";
+  fetch(
+    `https://kea21-6a0c.restdb.io/rest/products?q={ "$or": ${filter_type} }`,
+    options
+  )
+    .then(function (response) {
+      return response.json();
     })
-    .catch((err) => {
-      console.error(err);
+    .then(function (data) {
+      showData(data);
     });
 }
-getData();
+
+fetch(url, options)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    showData(data);
+  });
 
 function showData(data) {
-  console.log(data);
-
-  //grab the template
-
-  const template = document.querySelector("#product-template").content;
-  data.forEach((data) => {
-    //clone
-    const copy = template.cloneNode(true);
-
-    //adjust stuff
-    copy.querySelector("h2").textContent = data.name;
-    copy.querySelector("#img").src = data.img_url;
-    copy.querySelector("p").textContent = data.price + `,-`;
-    copy.querySelector("a").href = `product.html?id=${data._id}`;
-    //copy.querySelector("article img").alt = data.productdisplayname;
-    // copy.querySelector("h3 span").textContent = post.username;
-    // copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
-    //apend it
-    document.querySelector("section").appendChild(copy);
-  });
+  console.log("data", data);
+  data.forEach(product);
 }
 
-//filtering menu drop-downs working
+function product(data) {
+  //grab the template
+
+  const template = document.querySelector("template").content;
+  //clone
+  const copy = template.cloneNode(true);
+
+  //adjust stuff
+  copy.querySelector("h2").textContent = data.name;
+  copy.querySelector("#img").src = data.img_url;
+  copy.querySelector("p").textContent = data.price + `,-`;
+  copy.querySelector("a").href = `product.html?id=${data._id}`;
+  //copy.querySelector("article img").alt = data.productdisplayname;
+  // copy.querySelector("h3 span").textContent = post.username;
+  // copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
+  //apend it
+  document.querySelector("section").appendChild(copy);
+}
 
 document.querySelector("#catbtn").onclick = () => {
   filterMenu();
@@ -69,3 +89,89 @@ function filterMenu4() {
   document.querySelector("#price").classList.toggle("hidden");
   document.querySelector("#pribtn span").classList.toggle("rotate");
 }
+
+const checkboxes = document
+  .querySelector("#category")
+  .querySelectorAll(`[type="checkbox"]`);
+checkboxes.forEach((e) => {
+  e.onclick = () => {
+    filterBags();
+  };
+});
+
+// filtering bags checkboxes- multiple filters at the same time
+//CATEGORIES
+function filterBags() {
+  let array = [];
+
+  checkboxes.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        category: `${e.dataset.category}`,
+      });
+    }
+  });
+
+  filter(JSON.stringify(array));
+}
+
+//SIZE
+const checkboxes2 = document
+  .querySelector("#size")
+  .querySelectorAll(`[type="checkbox"]`);
+checkboxes2.forEach((e) => {
+  e.onclick = () => {
+    filterSize();
+  };
+});
+
+function filterSize() {
+  let array = [];
+
+  checkboxes2.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        size: `${e.dataset.category}`,
+      });
+    }
+  });
+  filter(JSON.stringify(array));
+}
+
+//PRICE RANGE
+const checkboxes3 = document
+  .querySelector("#price")
+  .querySelectorAll(`[type="checkbox"]`);
+checkboxes3.forEach((e) => {
+  e.onclick = () => {
+    filterPrice();
+  };
+});
+function filterPrice() {
+  let array = [];
+
+  checkboxes3.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        price_level: `${e.dataset.category}`,
+      });
+    }
+  });
+
+  filter(JSON.stringify(array));
+}
+
+/*function filterBags() {
+  //checkboxes;
+  { "category": "${filter_type}"} ,{ "category": "Shoulder Bags"}
+  filter("Shoulder Bags");
+}*/
+
+/*if (document.getElementById("bumbag").checked == true) {
+    filter("Shoulder Bags");
+  } else {
+    filter("");
+    console.log("");
+  }
+}
+*/

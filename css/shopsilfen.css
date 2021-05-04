@@ -53,12 +53,24 @@ p {
 #silfen {
   padding: 0.3em 2em;
   background-color: #9cc3df;
-}
-#silfenplay {
-  padding: 0.3em 2em;
-  background-color: var(--color-4);
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+
+  gap: 1em;
+  cursor: pointer;
 }
 
+#silfenplay {
+  padding: 0.3em 1em 0.3em 2em;
+  background-color: var(--color-4);
+  display: flex;
+  gap: 1em;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
 .filterdropdown {
   margin-top: 8vw;
 }
@@ -70,4 +82,16 @@ aside h3 {
 
 .rotate {
   transform: rotate(180deg);
+}
+main {
+  padding-bottom: 8vw;
+}
+
+#div3 h2 {
+  padding: 105px 90px;
+  background-color: var(--color-2);
+  color: white;
+  font-family: var(--font-1);
+  letter-spacing: 0.2vw;
+  font-size: 26px;
 }

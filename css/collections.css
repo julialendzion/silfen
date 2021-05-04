@@ -5,7 +5,6 @@
 section {
   position: absolute;
   margin-top: 20vw;
-  padding: 2vw;
 }
 
 .row {
@@ -59,6 +58,7 @@ section h1 {
 
 .collectionbutton {
   position: absolute;
+  display: flex;
   color: white;
   font-size: 1.1vw;
   padding: 12px 24px;
@@ -80,4 +80,55 @@ section h1 {
   content: "";
   display: table;
   clear: both;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-1);
+  color: black;
+  font-size: 1.1rem;
+}
+
+.container1 a {
+  color: black;
+  padding: 0.5vw 2vw;
+  font-size: 1.1rem;
+}
+
+.container1 p {
+  opacity: 25%;
+  padding: 0vw 2vw;
+}
+
+.container2 p {
+  padding-bottom: 10px;
+  color: black;
+  margin-top: -5px;
+}
+
+.container2 h4 {
+  margin-top: 20px;
+  letter-spacing: 0.1vw;
+}
+
+.container2 img {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.container2 button {
+  border-radius: 0vw;
+  color: black;
+  background-color: var(--color-4);
+  opacity: 70%;
+  font-size: 1.1rem;
+  width: 40%;
+  border: none;
+  padding: 0.3vw 0vw;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: block;
 }

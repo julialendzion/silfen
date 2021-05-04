@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+    font-family: Manrope, sans-serif;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "box1 box1"
+        "goal1 goal1-img"
+        "goal2-img goal2"
+        "goal3 goal3-img"
+        "materials-text materials-text"
+        "materials materials";
+    grid-template-columns: 1fr 1fr;
+}
+
+.box1 {
+    background-color: #AED5B2;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    grid-area: box1;
+    margin-bottom: 2em;
+}
+
+.box1 h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    margin-top: 8em;
+}
+
+.box1 h2 {
+    font-weight: 300;
+    margin-right: 20em;
+    margin-left: 20em;
+    font-size: 1.3em;
+}
+
+.text {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.text p {
+    padding: 30px;
+    margin-bottom: 3em;
+    font-weight: 300;
+}
+
+.goal1 {
+    grid-area: goal1;
+    margin-left: 13em;
+    margin-top: 3em;
+}
+
+.goal1 img {
+    display: block;
+    width: 70%;
+}
+
+.goal1 h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+.goal1-img {
+    grid-area: goal1-img;
+    width: 80%;
+    margin-left: 0;
+    margin-top: 3em;
+}
+
+.goal1 p {
+    margin-right: 7em;
+    margin-top: 3em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.goal2 {
+    grid-area: goal2;
+    margin-top: 4em;
+}
+
+.goal2 img {
+    width: 60%;
+}
+
+.goal2-img {
+    grid-area: goal2-img;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+}
+
+.goal2 h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.goal2 p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-right: 9em;
+}
+
+.goal3 {
+    grid-area: goal3;
+    margin-left: 13em;
+    margin-top: 5em;
+}
+
+.goal3 h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.goal3 img {
+    grid-area: goal3-img;
+    width: 70%;
+}
+
+.goal3 p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-right: 5em;
+}
+
+.goal3-img {
+    width: 80%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.materials-text {
+    grid-area: materials-text;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 4em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.materials {
+    grid-area: materials;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-left: 10em;
+}
+
+.materials img {
+    width: 80%;
+}
+
+.materials h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.materials p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-right: 10em;
+    margin-bottom: 3em;
+}
+
+footer {
+    grid-area: footer;
+    display: block;
+    margin-top: 195vw;
+} 
+
+@media only screen and (max-width: 990px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "goal1"
+            "goal1-img"
+            "goal2"
+            "goal2-img"
+            "goal3"
+            "goal3-img"
+            "materials-text"
+            "materials";
+    }
+
+    .box1 {
+        margin: 0;
+    }
+
+    .box1 h2 {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .goal1 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .goal1 p {
+        margin-right: 0;
+    }
+
+    .goal1 img {
+        width: 90%;
+    }
+
+    .goal1-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .goal2 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .goal2 p {
+        margin-right: 0;
+    }
+
+    .goal2 img {
+        width: 90%;
+    }
+
+    .goal3 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .goal3 p {
+        margin-right: 0;
+    }
+
+    .goal3 img {
+        width: 90%;
+    }
+
+    .goal3-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .materials {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .materials-text {
+        font-size: 1.7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .materials {
+        margin-right: 2em;
+        margin-left: 2em;
+        justify-content: center;
+    }
+
+    .materials h1 {
+        text-align: center;
+    }
+
+    .materials img {
+        width: 100%;
+    }
+
+    .materials p {
+        margin-right: 0;
+        text-align: justify;
+    }
+
+    footer {
+        margin-top: 870vw;
+    }
+}
