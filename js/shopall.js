@@ -17,7 +17,7 @@ function filter(filter_type) {
   console.log("filering", filter_type);
   document.querySelector("section").innerHTML = "";
   fetch(
-    `https://kea21-6a0c.restdb.io/rest/products?filter=${filter_type}`,
+    `https://kea21-6a0c.restdb.io/rest/products?q={ "$or": ${filter_type} }`,
     options
   )
     .then(function (response) {
@@ -90,27 +90,63 @@ function filterMenu4() {
   document.querySelector("#pribtn span").classList.toggle("rotate");
 }
 
-document.querySelector("#bumbag").onclick = () => {
-  filterBumbags();
-};
-document.querySelector("#crossbody").onclick = () => {
-  filterCrossbody();
-};
+const checkboxes = document
+  .querySelector("#category")
+  .querySelectorAll(`[type="checkbox"]`);
+checkboxes.forEach((e) => {
+  e.onclick = () => {
+    filterBags();
+  };
+});
 
-function filterBumbags() {
-  if (document.getElementById("bumbag").checked == true) {
-    filter("Mini Bag");
+function filterBags() {
+  let array = [];
+
+  checkboxes.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        category: `${e.dataset.category}`,
+      });
+    }
+  });
+
+  filter(JSON.stringify(array));
+}
+
+const checkboxes2 = document
+  .querySelector("#size")
+  .querySelectorAll(`[type="checkbox"]`);
+checkboxes2.forEach((e) => {
+  e.onclick = () => {
+    filterColours();
+  };
+});
+
+function filterColours() {
+  let array = [];
+
+  checkboxes2.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        size: `${e.dataset.category}`,
+      });
+    }
+  });
+
+  filter(JSON.stringify(array));
+}
+
+/*function filterBags() {
+  //checkboxes;
+  { "category": "${filter_type}"} ,{ "category": "Shoulder Bags"}
+  filter("Shoulder Bags");
+}*/
+
+/*if (document.getElementById("bumbag").checked == true) {
+    filter("Shoulder Bags");
   } else {
     filter("");
     console.log("");
   }
 }
-
-function filterCrossbody() {
-  if (document.getElementById("crossbody").checked == true) {
-    filter("Crossbody Bag");
-  } else {
-    filter("");
-    console.log("");
-  }
-}
+*/
