@@ -189,7 +189,7 @@ main {
 footer {
     grid-area: footer;
     display: block;
-    margin-top: 195vw;
+    margin-top: 196vw;
 } 
 
 @media only screen and (max-width: 990px) {
