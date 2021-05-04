@@ -99,6 +99,8 @@ checkboxes.forEach((e) => {
   };
 });
 
+// filtering bags checkboxes- multiple filters at the same time
+//CATEGORIES
 function filterBags() {
   let array = [];
 
@@ -113,22 +115,45 @@ function filterBags() {
   filter(JSON.stringify(array));
 }
 
+//SIZE
 const checkboxes2 = document
   .querySelector("#size")
   .querySelectorAll(`[type="checkbox"]`);
 checkboxes2.forEach((e) => {
   e.onclick = () => {
-    filterColours();
+    filterSize();
   };
 });
 
-function filterColours() {
+function filterSize() {
   let array = [];
 
   checkboxes2.forEach((e) => {
     if (e.checked === true) {
       array.push({
         size: `${e.dataset.category}`,
+      });
+    }
+  });
+  filter(JSON.stringify(array));
+}
+
+//PRICE RANGE
+const checkboxes3 = document
+  .querySelector("#price")
+  .querySelectorAll(`[type="checkbox"]`);
+checkboxes3.forEach((e) => {
+  e.onclick = () => {
+    filterPrice();
+  };
+});
+function filterPrice() {
+  let array = [];
+
+  checkboxes3.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        price_level: `${e.dataset.category}`,
       });
     }
   });
