@@ -28,6 +28,19 @@ section h1 {
   position: relative;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  margin-top: 2vw;
+  position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Collection buttons */
 
 #snow button {
@@ -69,10 +82,39 @@ section h1 {
   opacity: 90%;
 }
 
+/* ???????? */
+
+section {
+  position: absolute;
+  margin-top: 15vw;
+}
+
+.row {
+  position: absolute;
+  width: 100vw;
+  padding-right: 3%;
+  justify-content: space-around;
+  display: flex;
+  background-color: var(--color-5);
+}
+
+section h5 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 60%;
+  margin-top: -10vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.4rem;
+  color: black;
+  position: relative;
+}
+
 .column {
   float: left;
   width: 33.33%;
   margin-top: 2vw;
+  padding: 10px;
   position: relative;
 }
 
@@ -82,53 +124,8 @@ section h1 {
   clear: both;
 }
 
-.container1 {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-1);
-  color: black;
-  font-size: 1.1rem;
-}
-
-.container1 a {
-  color: black;
-  padding: 0.5vw 2vw;
-  font-size: 1.1rem;
-}
-
-.container1 p {
-  opacity: 25%;
-  padding: 0vw 2vw;
-}
-
-.container2 p {
-  padding-bottom: 10px;
-  color: black;
-  margin-top: -5px;
-}
-
-.container2 h4 {
-  margin-top: 20px;
-  letter-spacing: 0.1vw;
-}
-
-.container2 img {
-  padding-bottom: 20px;
-  width: 100%;
-}
-
-.container2 button {
-  border-radius: 0vw;
-  color: black;
-  background-color: var(--color-4);
-  opacity: 70%;
-  font-size: 1.1rem;
-  width: 40%;
-  border: none;
-  padding: 0.3vw 0vw;
-  margin-bottom: 20px;
-}
+/* footer */
 
 footer {
-  display: block;
+  margin-top: 100vw;
 }
