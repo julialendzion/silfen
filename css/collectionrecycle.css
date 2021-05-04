@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
+
+/*picture with h1 and h2*/
+body {
+  font-family: Manrope, sans-serif;
+}
+
+.box1 {
+  text-align: left;
+  width: 100vw;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+.box1 h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 8em;
+  margin-left: -100rem;
+  color: white;
+}
+
+.box1 h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+  margin-top: 8em;
+  margin-left: -100rem;
+  color: black;
+}
+
+.box1 img {
+  width: 100%;
+  height: auto;
+  margin-top: -20vw;
+}
+
+.text {
+  justify-content: left;
+  font-size: 1.3rem;
+  margin-top: -20vw;
+  margin-left: 2vw;
+}
+
+.recycleimg {
+  opacity: 27%;
+  margin-top: 7vw;
+  margin-left: 45rem;
+  width: 27%;
+  height: auto;
+  transform: rotate(353deg);
+}
+
+img {
+  width: 80%;
+}
+.introduction {
+  display: flex;
+}
+
+.infotext h3 {
+  font-size: 3rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.infotext p {
+  font-size: 2.5rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.infotext {
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-top: 15vw;
+  margin-left: 2vw;
+  font-family: "Manrope", sans-serif;
+}
+
+/*collection info columns*/
+section {
+  position: absolute;
+  margin-top: 15vw;
+  display: flex;
+}
+
+.row {
+  margin-top: 50vw;
+  position: absolute;
+  width: 100vw;
+  justify-content: space-around;
+  display: flex;
+  background-color: var(--color-5);
+}
+
+section h5 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 60%;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.4rem;
+  color: black;
+  position: relative;
+}
+
+section p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 60%;
+  letter-spacing: 0.2vw;
+  font-size: 1.5rem;
+  color: black;
+  position: relative;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin-top: 2vw;
+  padding: 10px;
+  position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer */
+
+footer {
+  margin-top: 110vw;
+}
