@@ -64,18 +64,17 @@ img {
 }
 
 .infotext h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Manrope", sans-serif;
 }
 
 .infotext p {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "Manrope", sans-serif;
 }
 
 .infotext {
   justify-content: center;
-  font-size: 1.3rem;
   margin-top: 15vw;
   margin-left: 2vw;
   font-family: "Manrope", sans-serif;
@@ -135,7 +134,7 @@ section p {
 /* Shop Collections */
 .shopcollections {
   position: absolute;
-  margin-top: 90vw;
+  margin-top: 72vw;
   width: 100vw;
   height: 10vw;
 }
@@ -157,7 +156,7 @@ article {
 
 .arrow {
   width: 1.8vw;
-  margin-top: -30px;
+  margin-top: 300px;
 }
 
 .productrow h2 {
@@ -187,6 +186,18 @@ h1 {
   opacity: 60%;
   margin-top: -5px;
   margin-left: 6px;
+}
+
+section h4 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 80%;
+  letter-spacing: 0.2vw;
+  font-size: 1.4rem;
+  color: black;
+  position: relative;
+  margin-top: 125vw;
+  margin-left: 25rem;
 }
 
 /* footer */
