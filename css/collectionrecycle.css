@@ -132,8 +132,65 @@ section p {
   clear: both;
 }
 
+/* Shop Collections */
+.shopcollections {
+  position: absolute;
+  margin-top: 90vw;
+  width: 100vw;
+  height: 10vw;
+}
+
+.productscroll {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  display: inline-flex;
+  flex-direction: column;
+  width: 18vw;
+  padding: 15px;
+  text-align: center;
+}
+
+.arrow {
+  width: 1.8vw;
+  margin-top: -30px;
+}
+
+.productrow h2 {
+  font-family: var(--font-1);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  opacity: 60%;
+}
+
+h1 {
+  font-weight: 500;
+  margin-left: 13vw;
+  margin-bottom: 4vw;
+  opacity: 60%;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 1.4rem;
+}
+
+.productrow p {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.07vw;
+  opacity: 60%;
+  margin-top: -5px;
+  margin-left: 6px;
+}
+
 /* footer */
 
 footer {
-  margin-top: 110vw;
+  margin-top: 150vw;
 }
