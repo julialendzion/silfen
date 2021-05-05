@@ -390,3 +390,144 @@ hr {
   margin-left: 5vw;
   opacity: 0.3;
 }
+
+@media screen and (max-width: 700px) {
+  main {
+    padding-top: 20vw;
+  }
+
+  #row1,
+  #row2 {
+    flex-direction: column;
+    margin-top: 50vw;
+  }
+
+  #cart h1 {
+    position: absolute;
+    text-align: center;
+    margin-top: -30vw;
+    align-self: center;
+  }
+
+  #cart,
+  #billing {
+    align-items: unset;
+    margin-top: 50vw;
+  }
+
+  #row1 {
+    margin-left: 3vw;
+    margin-top: 10vw;
+  }
+
+  #row1 p {
+    padding: 2vw 7vw;
+  }
+
+  .producttitle {
+    margin-right: 0vw;
+  }
+
+  #row2 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    align-items: unset;
+    width: 50vw;
+    margin-bottom: 1vw;
+    margin-left: 50vw;
+    margin-top: -90vw;
+  }
+
+  #row2 img {
+    width: 30vw;
+    margin-left: -7vw;
+  }
+
+  .bagname {
+    padding-bottom: 5vw;
+    margin-left: 0vw;
+  }
+
+  .quantity {
+    margin-left: 0vw;
+    padding-top: 5vw;
+  }
+
+  .price-total {
+    margin-top: 13vw;
+  }
+
+  .line1 {
+    display: none;
+  }
+
+  #cartsum {
+    margin-left: 50vw;
+    flex-direction: column;
+    margin-top: 20vw;
+  }
+
+  #cartsum button {
+    padding: 2.5vw 2vw;
+    margin-top: 5vw;
+    width: 200px;
+  }
+
+  .salecode input {
+    width: 130%;
+    margin-left: 25px;
+  }
+
+  #codeflex {
+    margin-top: 4vw;
+    width: 25vw;
+  }
+
+  /* lines */
+
+  hr {
+    width: 80vw;
+  }
+
+  #billing {
+    margin-top: 10vw;
+    margin-left: 13vw;
+  }
+
+  #payment {
+    display: none;
+  }
+
+  .price1 {
+    margin-left: 20px;
+  }
+
+  .price2 {
+    margin-left: 20px;
+  }
+
+  .price3 {
+    padding-left: 12px;
+  }
+
+  .terms {
+    margin-left: 5vw;
+    margin-top: 0px;
+    width: 140%;
+  }
+
+  .linesum {
+    width: 40vw;
+  }
+
+  .info-container input {
+    border: none;
+    background-color: var(--color-5);
+    margin: 0vw 5vw;
+    margin-top: 1vw;
+  }
+
+  .info-container {
+    margin-left: 5vw;
+  }
+}
