@@ -421,6 +421,7 @@ footer {
     flex-direction: column;
     gap: 2vw;
     margin-top: 2vw;
+    padding-left: 60px;
   }
   .dropdown a:hover {
     text-decoration: underline;
