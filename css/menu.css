@@ -54,7 +54,9 @@ header img {
   margin-left: 0.5vw;
   margin-top: -0.5px;
 }
-
+#burgermenuBtn {
+  display: none;
+}
 header a {
   margin-right: 3vw;
   color: black;
@@ -315,5 +317,113 @@ footer {
     margin-left: 10vw;
     padding: 2vw 2vw;
     margin-top: 5vw;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  #logo {
+    width: 200px;
+    margin-left: 5vw;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-top: 4rem;
+  }
+
+  /* Full width dropdown background */
+  .whitebg {
+    display: none;
+  }
+
+  .whitebg:before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 150vw;
+    margin-left: -50vw;
+    margin-top: -140px;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0vw;
+    font-size: 1rem;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  /* Search bar and the change on hover */
+  .search a {
+    display: none;
+  }
+
+  .searchicon {
+    display: none;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  nav {
+    display: inline;
+    padding: 0;
+    margin-top: 0px;
+    height: 10px;
+
+    background: white;
+  }
+  header img {
+    height: auto;
+    margin-left: 2vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  header {
+    background-color: white;
+    width: 100vw;
+  }
+  /* Cart Icon */
+
+  .cartbag {
+    display: none;
+  }
+
+  .cartbag img {
+    display: none;
+  }
+  #burgerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 2vw;
+  }
+
+  .dropdown a:hover {
+    text-decoration: underline;
+  }
+
+  #burgermenuBtn {
+    display: inline;
+    margin-top: -8vw;
+    margin-right: auto;
+    margin-left: 3vw;
   }
 }
