@@ -21,7 +21,7 @@
   width: 100vw;
 }
 
-body {
+html {
   background-color: var(--color-5);
   font-family: var(--font-1);
   font-weight: 500;
@@ -260,4 +260,107 @@ a {
 
 footer {
   margin-top: 230vw;
+}
+
+@media screen and (max-width: 700px) {
+  .gridsection {
+    margin-top: 4rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "img img2"
+      "img img3"
+      "img4 img4"
+      "img4 img4";
+    width: 100vw;
+  }
+
+  #img1 {
+    height: 98vw;
+  }
+
+  #img1 img {
+    height: 120%;
+    width: 130%;
+  }
+
+  #img3 img {
+    height: 110%;
+  }
+
+  #img3:hover {
+    height: 105%;
+  }
+
+  #img3 p {
+    display: none;
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-left: -155px;
+  }
+
+  #img1 button {
+    top: 30%;
+    left: 50%;
+  }
+
+  #img4 button {
+    top: 15%;
+    left: 50%;
+  }
+
+  .shopbutton:hover {
+    font-size: 1.6rem;
+    margin-left: -1px;
+    margin-top: -1px;
+  }
+
+  .shopbutton {
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    letter-spacing: 0.05vw;
+  }
+
+  .shopcollections {
+    display: none;
+  }
+
+  .join-us {
+    margin-top: 200vw;
+    flex-direction: column;
+  }
+
+  .text-container {
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw 4.8vw;
+    background: var(--color-6);
+    height: 100vw;
+  }
+
+  .join-us img {
+    position: absolute;
+    width: 100%;
+    margin-top: 100vw;
+  }
+
+  .signup {
+    margin-top: -10vw;
+  }
+  .resp {
+    display: none;
+  }
+
+  .insta {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    margin-top: 400vw;
+    text-align: center;
+    padding-bottom: 10vw;
+  }
+
+  footer {
+    margin-top: 480vw;
+  }
 }
