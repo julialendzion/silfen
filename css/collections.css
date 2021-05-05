@@ -96,23 +96,44 @@ section h1 {
   opacity: 90%;
 }
 
-/* ???????? */
-
-.column {
-  float: left;
-  width: 33.33%;
-  margin-top: 2vw;
-  position: relative;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* footer */
 
 footer {
   margin-top: 50vw;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    margin-top: 30vw;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-left: 10vw;
+  }
+
+  footer {
+    margin-top: 350vw;
+  }
+
+  .column {
+    float: left;
+    width: 80%;
+    margin-top: 2vw;
+    position: relative;
+  }
+
+  .collectionbutton:hover {
+    font-size: 1.2rem;
+    margin-left: -1px;
+    margin-top: -1px;
+  }
+
+  .collectionbutton {
+    font-size: 1.1rem;
+  }
+
+  section h1 {
+    margin-left: 10vw;
+  }
 }
