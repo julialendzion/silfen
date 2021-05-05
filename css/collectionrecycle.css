@@ -38,10 +38,10 @@ body {
 .recycleimg {
   position: absolute;
   opacity: 27%;
-  margin-top: 4vw;
+  margin-top: 6vw;
   margin-left: 60vw;
   transform: rotate(353deg);
-  width: 25vw;
+  width: 20vw;
 }
 
 .introduction {
