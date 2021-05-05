@@ -50,3 +50,14 @@ function sale() {
 function saleOut() {
   document.querySelector("#par").style.display = "none";
 }
+
+//BURGER MENU WORKING//
+document
+  .querySelector("#burgermenuBtn")
+  .addEventListener("click", ShowBurgermenu);
+
+function ShowBurgermenu() {
+  document.querySelector("#cos").classList.toggle("burgerContent");
+  document.querySelector("#cos").classList.toggle("burgerContentOpen");
+  console.log("show menu");
+}

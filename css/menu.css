@@ -409,20 +409,26 @@ footer {
   .cartbag img {
     display: none;
   }
-  #burgerContent {
+
+  .burgerContent {
+    display: none;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 2vw;
+  }
+  .burgerContentOpen {
     display: flex;
     flex-direction: column;
     gap: 2vw;
     margin-top: 2vw;
   }
-
   .dropdown a:hover {
     text-decoration: underline;
   }
 
   #burgermenuBtn {
     display: inline;
-    margin-top: -8vw;
+    height: 28px;
     margin-right: auto;
     margin-left: 3vw;
   }
