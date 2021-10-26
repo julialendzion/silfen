@@ -6,7 +6,7 @@ const url = `https://kea21-6a0c.restdb.io/rest/products`;
 //The API key
 const options = {
   headers: {
-    "x-apikey": "60339bce5ad3610fb5bb64e6",
+    "x-apikey": "6176a6518597142da1745a51",
   },
 };
 
@@ -16,10 +16,7 @@ const options = {
 function filter(filter_type) {
   console.log("filering", filter_type);
   document.querySelector("section").innerHTML = "";
-  fetch(
-    `https://kea21-6a0c.restdb.io/rest/products?q={ "$or": ${filter_type} }`,
-    options
-  )
+  fetch(`https://kea21-6a0c.restdb.io/rest/products?q={ "$or": ${filter_type} }`, options)
     .then(function (response) {
       return response.json();
     })
@@ -90,9 +87,7 @@ function filterMenu4() {
   document.querySelector("#pribtn span").classList.toggle("rotate");
 }
 
-const checkboxes = document
-  .querySelector("#category")
-  .querySelectorAll(`[type="checkbox"]`);
+const checkboxes = document.querySelector("#category").querySelectorAll(`[type="checkbox"]`);
 checkboxes.forEach((e) => {
   e.onclick = () => {
     filterBags();
@@ -116,9 +111,7 @@ function filterBags() {
 }
 
 //SIZE
-const checkboxes2 = document
-  .querySelector("#size")
-  .querySelectorAll(`[type="checkbox"]`);
+const checkboxes2 = document.querySelector("#size").querySelectorAll(`[type="checkbox"]`);
 checkboxes2.forEach((e) => {
   e.onclick = () => {
     filterSize();
@@ -139,9 +132,7 @@ function filterSize() {
 }
 
 //PRICE RANGE
-const checkboxes3 = document
-  .querySelector("#price")
-  .querySelectorAll(`[type="checkbox"]`);
+const checkboxes3 = document.querySelector("#price").querySelectorAll(`[type="checkbox"]`);
 checkboxes3.forEach((e) => {
   e.onclick = () => {
     filterPrice();

@@ -2,7 +2,7 @@ function getData() {
   fetch("https://kea21-6a0c.restdb.io/rest/products", {
     method: "GET",
     headers: {
-      "x-apikey": "60339bce5ad3610fb5bb64e6",
+      "x-apikey": "6176a6518597142da1745a51",
     },
   })
     .then((res) => res.json())
@@ -49,15 +49,4 @@ function sale() {
 }
 function saleOut() {
   document.querySelector("#par").style.display = "none";
-}
-
-//BURGER MENU WORKING//
-document
-  .querySelector("#burgermenuBtn")
-  .addEventListener("click", ShowBurgermenu);
-
-function ShowBurgermenu() {
-  document.querySelector("#cos").classList.toggle("burgerContent");
-  document.querySelector("#cos").classList.toggle("burgerContentOpen");
-  console.log("show menu");
 }

@@ -4,7 +4,7 @@ function getData() {
   const url = "https://kea21-6a0c.restdb.io/rest/products/" + id;
   const options = {
     headers: {
-      "x-apikey": "60339bce5ad3610fb5bb64e6",
+      "x-apikey": "6176a6518597142da1745a51",
     },
   };
 
@@ -26,11 +26,8 @@ function showData(product) {
   document.querySelector(".img .productimage").src = product.img_url;
   document.querySelector(".img .productimage").alt = product.name;
   document.querySelector(".about h1").textContent = product.name;
-  document.querySelector(".about .description").textContent =
-    product.description;
-  document.querySelector(
-    ".about .price"
-  ).textContent = `price: ${product.price} DKK`;
+  document.querySelector(".about .description").textContent = product.description;
+  document.querySelector(".about .price").textContent = `price: ${product.price} DKK`;
   document.querySelector("#details").textContent = product.fabric;
   document.querySelector("#details2").textContent = product.measurements;
   document.querySelector("#delivery").textContent = product.delivery;
